@@ -2,16 +2,18 @@
 
   <table class="table table-striped table-bordered">
     <tr>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Email</th>
+      <th>Name</th>
+      <th>RecordTypeId</th>
+      <th>Billing City</th>
+      <th>Billing Country</th>
     </tr>
 
     <% @contacts.each do |contact| %>
       <tr>
-        <td><%= contact.firstname %></td>
-        <td><%= contact.lastname %></td>
-        <td><%= contact.email %></td>
+        <td><%= account.recordtypeid %></td>
+        <td><%= account.name %></td>
+        <td><%= account.billingcity %></td>
+        <td><%= account.billingcountry %></td>
       </tr>
     <% end %>
   </table>
